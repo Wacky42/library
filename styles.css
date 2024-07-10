@@ -1,0 +1,213 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+
+
+input, button, textarea, select {
+    font: inherit;
+  }
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+#root, #__next {
+    isolation: isolate;
+  }
+  
+
+
+body {
+    display: flex;
+    /* color: #5D6063; */
+    background-color: #EAEDF0;
+    align-items: center;
+
+    justify-content: space-evenly;
+    font-family: "Helvetica", "Arial", sans-serif;
+
+}
+
+.form-container {
+    padding: 2em;
+}
+
+form {
+    display: inline-block;
+    /* max-width: 100%; */
+    padding: 50px;
+    margin: 40px 0;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+}
+
+
+.form-row input[type='text'],
+.form-row input[type="number"] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+
+    /* font-size: 14px; */
+    /* font: 1em sans-serif; */
+    /* width: 300px; */
+    /* border: 1px solid #999 */
+}
+
+.form-row input:focus {
+    border-color: #000;
+}
+
+.form-row .checkbox-label {
+    margin-bottom: 0;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    background-color: #5995DA;
+}
+
+.form-row button:hover {
+    background-color: #76AEED;
+}
+
+.form-row button:active {
+    background-color: #407FC7;
+}
+
+.books-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 40px 0;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    gap: 20px;
+}
+
+h3 {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.bookList {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.bookRow {
+    border-bottom: 1px solid #0000003d;
+    margin: 20px 0px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bookDetails {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.removeButton {
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    background-color: rgba(255, 0, 0, 0.897);
+}
+
+.removeButton:hover {
+    background-color: rgba(255, 0, 0, 0.507);
+}
+
+.removeButton:active {
+    background-color: rgb(165, 3, 3);
+}
+
+
+
+li {
+    list-style-type: none;
+    border: 1px solid #000;
+    justify-self: center;
+    padding: 0px 30px;
+    border-radius: 5px;
+}
+
+.bookDetails li:last-child {
+    border: none;
+}
+
+.title, .author, .pages {
+    flex: 0 1 auto;
+}
+
+.readStatus {
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    background-color: rgb(4, 182, 4);
+}
+
+.readStatus:hover {
+    background-color: rgb(8, 219, 8);
+}
+
+.readStatus:active {
+    background-color: rgb(2, 119, 2);
+}
+
+
